@@ -53,19 +53,21 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "content": "Fast & Free Shipping over $200 | Free Exchanges"
     }
   },
 
   "header-row#3-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#websites",
       "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "logo#desktop",
+      "header-spacer",
+      "login",
+      "minicart"
     ],
     "props": {
-      "blockClass": "menu-link",
-      "inverted": "true"
+      "sticky": true,
+      "blockClass": "main-header"
     }
   },
   "vtex.menu@2.x:menu#websites": {
@@ -128,26 +130,297 @@
   "header-row#4-desktop": {
     "children": [
       "vtex.menu@2.x:menu#category-menu",
-      "header-spacer",
-      "logo#desktop",
-      "header-spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart"
+      "search-bar"
     ],
     "props": {
-      "sticky": true,
+      "sticky": false,
       "blockClass": "main-header"
     }
   },
   "vtex.menu@2.x:menu#category-menu": {
     "children": [
-      "menu-item#category-clothing",
-      "menu-item#category-decoration",
-      "menu-item#category-notebooks",
-      "menu-item#custom-sale"
+      "menu-item#category-new-arrivals",
+      "menu-item#category-brands",
+      "menu-item#category-category",
+      "menu-item#category-275-central",
+      "menu-item#category-trends",
+      "menu-item#category-sale"
     ]
+  },
+  "menu-item#category-new-arrivals": {
+    "props": {
+      "id": "menu-item-category-new-arrivals",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.footnotes.com/Latest-Arrivals/Search",
+        "noFollow": true,
+        "tagTitle": "New Arrivals",
+        "text": "New Arrivals"
+      }
+    }
+  },
+  "menu-item#category-brands": {
+    "props": {
+      "id": "menu-item-category-new-arrivals",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.footnotes.com/Latest-Arrivals/Search",
+        "noFollow": true,
+        "tagTitle": "Brands",
+        "text": "Brands"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-brands"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-brands": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-brands"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-brands": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-brands-275-central",
+      "menu-item#category-brands-jslides",
+      "menu-item#category-brands-pedro-garcia",
+      "menu-item#category-brands-rag-and-bone",
+      "menu-item#category-brands-stuart-weitzman",
+      "menu-item#category-brands-golden-goose",
+      "menu-item#category-brands-jeffrey-campbell",
+      "menu-item#category-brands-phillip-lim",
+      "menu-item#category-brands-steve-madden",
+      "menu-item#category-brands-vince"
+
+    ]
+  },
+  "menu-item#category-brands-275-central": {
+    "props": {
+      "id": "menu-item-category-275-central",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "275 Central",
+        "text": "275 Central"
+      }
+    }
+  },
+  "menu-item#category-brands-jslides": {
+    "props": {
+      "id": "menu-item-category-jslides",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "JSlides",
+        "text": "JSlides"
+      }
+    }
+  },
+  "menu-item#category-brands-pedro-garcia": {
+    "props": {
+      "id": "menu-item-category-pedro-garcia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Pedro Garcia",
+        "text": "Pedro Garcia"
+      }
+    }
+  },
+  "menu-item#category-brands-rag-and-bone": {
+    "props": {
+      "id": "menu-item-category-rag-and-bone",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Rag & Bone",
+        "text": "Rag & Bone"
+      }
+    }
+  },
+  "menu-item#category-brands-stuart-weitzman": {
+    "props": {
+      "id": "menu-item-category-stuart-weitzman",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Stuart Weitzman",
+        "text": "Stuart Weitzman"
+      }
+    }
+  },
+  "menu-item#category-brands-golden-goose": {
+    "props": {
+      "id": "menu-item-category-golden-goose",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Golden Goose",
+        "text": "Golden Goose"
+      }
+    }
+  },
+  "menu-item#category-brands-jeffrey-campbell": {
+    "props": {
+      "id": "menu-item-category-jeffrey-campbell",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Jeffrey Campbell",
+        "text": "Jeffrey Campbell"
+      }
+    }
+  },
+  "menu-item#category-brands-phillip-lim": {
+    "props": {
+      "id": "menu-item-category-phillip-lim",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Phillip Lim",
+        "text": "Phillip Lim"
+      }
+    }
+  },
+  "menu-item#category-brands-steve-madden": {
+    "props": {
+      "id": "menu-item-category-steve-madden",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Steve Madden",
+        "text": "Steve Madden"
+      }
+    }
+  },
+  "menu-item#category-brands-vince": {
+    "props": {
+      "id": "menu-item-category-vince",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hats/d",
+        "noFollow": true,
+        "tagTitle": "Vince",
+        "text": "Vince"
+      }
+    }
+  },
+  "menu-item#category-category": {
+    "props": {
+      "id": "menu-item-category-new-arrivals",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.footnotes.com/Latest-Arrivals/Search",
+        "noFollow": true,
+        "tagTitle": "Category",
+        "text": "Category"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-clothing"
+    ]
+  },
+  "menu-item#category-275-central": {
+    "props": {
+      "id": "menu-item-category-new-arrivals",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.footnotes.com/Latest-Arrivals/Search",
+        "noFollow": true,
+        "tagTitle": "275 Central",
+        "text": "275 Central"
+      }
+    }
+  },
+  "menu-item#category-trends": {
+    "props": {
+      "id": "menu-item-category-new-arrivals",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.footnotes.com/Latest-Arrivals/Search",
+        "noFollow": true,
+        "tagTitle": "Trends",
+        "text": "Trends"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-clothing"
+    ]
+  },
+  "menu-item#category-sale": {
+    "props": {
+      "id": "menu-item-category-new-arrivals",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.footnotes.com/Latest-Arrivals/Search",
+        "noFollow": true,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
   },
   "menu-item#category-clothing": {
     "props": {
@@ -316,7 +589,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "https://www.footnotes.com/assets/images/HeaderLogo.png",
       "width": "180"
     }
   },
@@ -389,7 +662,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "https://www.footnotes.com/assets/images/HeaderLogo.png",
       "width": "70"
     }
   },

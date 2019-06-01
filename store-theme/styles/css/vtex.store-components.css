@@ -1,9 +1,9 @@
 .notificationBarContainer {
-  background-color: #E6F1E6;
-  color: #03034E;
+  background-color: #ed0f14;
+  color: #fff;
   font-weight: 700;
   font-size: 12px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .searchBarContainer {
