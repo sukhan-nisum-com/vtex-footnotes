@@ -59,6 +59,8 @@
 
   "header-row#3-desktop": {
     "children": [
+      "vtex.menu@2.x:menu#logomenu",
+      "rich-text#callus",
       "header-spacer",
       "logo#desktop",
       "header-spacer",
@@ -68,6 +70,32 @@
     "props": {
       "sticky": true,
       "blockClass": "main-header"
+    }
+  },
+  "rich-text#callus": {
+    "props": {
+      "text": "CALL US 1.866.487.4637",
+      "blockClass":"callus"
+    }
+  },
+  "vtex.menu@2.x:menu#logomenu": {
+    "children": [
+      "menu-item#stores"
+    ]
+  },
+  "menu-item#stores": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Stores",
+        "text": "STORES"
+      }
     }
   },
   "vtex.menu@2.x:menu#websites": {

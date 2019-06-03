@@ -36,5 +36,6 @@
   "description": "VTEX IO Store Theme",
   "registries": [
     "smartcheckout"
-  ]
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

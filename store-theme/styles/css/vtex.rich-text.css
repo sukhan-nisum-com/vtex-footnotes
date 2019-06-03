@@ -51,6 +51,15 @@
   color: #03034E;
 }
 
+.container--stores{
+  color: rgb(240, 16, 16);
+}
+
+.container--stores .paragraph{
+  padding-left: 24px;
+  text-align: center;
+}
+
 
 @media only screen and (min-width: 640px) {
   .container--question .strong {
